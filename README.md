@@ -38,13 +38,13 @@ L'obiettivo è fornire previsioni di prezzo più accurate e affidabili, riducend
 
 ```
 Model-for-a-real-estate-market/
-├── data/                  # Dataset grezzi e preprocessati
+├── data/                  # Dataset
 ├── notebooks/             # Notebook Jupyter per l'implementazione
 ├── src/                   # Codice sorgente organizzato in moduli
-│   ├── preprocessing.py   # Funzioni per la preparazione dei dati
-│   ├── models.py          # Implementazione dei modelli di regressione
-│   ├── evaluation.py      # Metriche di valutazione e analisi
-├── results/               # Grafici e report generati
+│   ├── data_processing.py   # Funzioni per la preparazione dei dati
+│   ├── models.py          # Implementazione dei modelli di regressione e Metriche di valutazione
+│   ├── constants.py      # RANDOM_STATE
+|   ├── results/               # Grafici e report generati
 ├── README.md              # Documentazione del progetto
 ```
 
