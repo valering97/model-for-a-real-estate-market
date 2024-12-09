@@ -1,28 +1,52 @@
-# Model-for-a-real-estate-market
-Repository for the third project of the master's degree in AI Engineering.
+# RealEstateAI Solutions: Model for a Real Estate Market
 
-RealEstateAI Solutions si propone di ottimizzare la valutazione dei prezzi immobiliari attraverso l'uso di tecniche avanzate di regolarizzazione in modelli di regressione lineare. L'obiettivo è fornire previsioni di prezzo più accurate e affidabili, riducendo il rischio di overfitting e migliorando la capacità di generalizzazione del modello.
+## Descrizione del Progetto
+RealEstateAI Solutions si propone di ottimizzare la valutazione dei prezzi immobiliari attraverso l'uso di tecniche avanzate di regolarizzazione in modelli di regressione lineare. Nel settore immobiliare, ottenere stime precise dei prezzi delle proprietà è cruciale per prendere decisioni strategiche. Tuttavia, i modelli di regressione lineare tradizionali possono soffrire di overfitting, compromettendo l'affidabilità delle previsioni. Questo progetto esplora e implementa metodi di regolarizzazione efficaci per affrontare tali sfide.
 
-Nel settore immobiliare, ottenere stime precise dei prezzi delle proprietà è cruciale per prendere decisioni informate. Tuttavia, i modelli di regressione lineare tradizionali possono soffrire di overfitting, compromettendo l'accuratezza delle previsioni. È necessario esplorare metodi di regolarizzazione efficaci per migliorare le performance predittive e gestire la complessità del modello.
+L'obiettivo è fornire previsioni di prezzo più accurate e affidabili, riducendo il rischio di overfitting e migliorando la capacità di generalizzazione del modello. Questo progetto mira a supportare agenti immobiliari e investitori nella presa di decisioni informate, aumentando la loro competitività nel mercato.
 
-Implementando e confrontando metodi di regolarizzazione come Lasso, Ridge e Elastic Net, RealEstateAI Solutions offrirà un sistema in grado di fornire previsioni di prezzo immobiliari più accurate e stabili. Questo permetterà agli agenti immobiliari e agli investitori di prendere decisioni basate su dati più affidabili, aumentando la loro competitività nel mercato.
+## Tecniche di Regolarizzazione Implementate
+1. **Ridge Regression**: Riduce l'overfitting aggiungendo un termine di penalizzazione basato sulla somma dei quadrati dei coefficienti.
+2. **Lasso Regression**: Effettua una selezione automatica delle variabili, riducendo a zero alcuni coefficienti.
+3. **Elastic Net Regression**: Combina i vantaggi di Ridge e Lasso, bilanciando l'importanza di entrambi.
 
-Requisiti del Progetto:
+---
 
-Preparazione del Dataset:
-Caricamento e preprocessamento dei dati sui prezzi immobiliari.
-Gestione dei valori mancanti, codifica delle variabili categoriche e normalizzazione/scalatura dei dati.
-Implementazione dei Modelli di Regressione:
-Ridge Regression: Implementazione e addestramento del modello con regolarizzazione Ridge.
-Lasso Regression: Implementazione e addestramento del modello con regolarizzazione Lasso.
-Elastic Net Regression: Implementazione e addestramento del modello con regolarizzazione Elastic Net.
-Valutazione delle Performance:
-Utilizzo di tecniche di validazione incrociata.
-Calcolo del Mean Squared Error (MSE) per ciascun modello.
-Confronto della complessità dei modelli valutando il numero di coefficienti non nulli.
-Analisi e confronto dei risultati dei vari metodi di regolarizzazione.
-Visualizzazione dei Risultati:
-Creazione di grafici per visualizzare e confrontare le performance dei modelli.
-Visualizzazione della distribuzione dei residui per valutare l'adeguatezza del modello.
-Visualizzazione dell'andamento dei coefficienti dei modelli rispetto ai parametri di regolarizzazione.
-Il progetto deve includere il codice sorgente completo, con commenti dettagliati che spiegano i vari passaggi, le scelte fatte e i risultati ottenuti, per garantire trasparenza e replicabilità del lavoro.
+## Requisiti del Progetto
+
+### 1. Preparazione del Dataset
+- **Caricamento e preprocessamento dei dati** sui prezzi immobiliari.
+- **Gestione dei valori mancanti**: Imputazione dei dati.
+- **Codifica delle variabili categoriche**: Conversione in rappresentazioni numeriche.
+- **Normalizzazione/Scalatura dei dati**: Per garantire la parità di scala tra le features.
+
+### 2. Implementazione dei Modelli di Regressione
+
+### 3. Valutazione delle Performance
+- **Validazione incrociata**: Per valutare la generalizzazione dei modelli.
+- **Calcolo del Mean Squared Error (MSE)**: Per misurare l'accuratezza delle previsioni.
+- **Confronto della complessità dei modelli**: Valutazione del numero di coefficienti non nulli.
+
+### 4. Visualizzazione dei Risultati
+- **Grafici comparativi**: Visualizzazione delle performance dei modelli.
+- **Distribuzione dei residui**: Valutazione della bontà di adattamento del modello.
+- **Andamento dei coefficienti**: Analisi delle variazioni rispetto ai parametri di regolarizzazione.
+
+---
+
+## Struttura del Progetto
+
+```
+Model-for-a-real-estate-market/
+├── data/                  # Dataset grezzi e preprocessati
+├── notebooks/             # Notebook Jupyter per l'implementazione
+├── src/                   # Codice sorgente organizzato in moduli
+│   ├── preprocessing.py   # Funzioni per la preparazione dei dati
+│   ├── models.py          # Implementazione dei modelli di regressione
+│   ├── evaluation.py      # Metriche di valutazione e analisi
+├── results/               # Grafici e report generati
+├── README.md              # Documentazione del progetto
+```
+
+---
+
